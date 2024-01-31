@@ -71,7 +71,8 @@
             weatherIcon.src = "assets\rain.png";
         }else if(data.weather[0].main =="Snow"){
             weatherIcon.src = "assets\snow.png";
-        }
+        }else if(data.weather[0].main =="Wind"){
+            weatherIcon.src = "assets\wind.png";
         };
 searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
