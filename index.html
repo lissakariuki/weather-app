@@ -64,6 +64,7 @@
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed +  "km/h" ;
 
+//if structure to allow different weather types to show at different times
         if(data.weather[0].main =="Clouds"){
             weatherIcon.src = "assets\clouds.png";
         }else if (data.weather[0].main =="Clear"){
